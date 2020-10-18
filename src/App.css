@@ -1,4 +1,11 @@
-.App {
+.personAdding {
+  font-size: 30;
+  color: green;
+}
+
+
+
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +42,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/

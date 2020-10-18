@@ -1,0 +1,28 @@
+{
+  "persons": [
+    {
+      "name": "Arto Hellas",
+      "number": "050-33338888",
+      "show": true,
+      "id": 1
+    },
+    {
+      "name": "Dan Abramov",
+      "number": "12-55-77777",
+      "show": true,
+      "id": 3
+    },
+    {
+      "name": "Mary Poppendieck",
+      "number": "675-888",
+      "show": true,
+      "id": 4
+    },
+    {
+      "name": "Jussi6",
+      "number": "77889",
+      "show": true,
+      "id": 9
+    }
+  ]
+}
