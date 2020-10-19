@@ -1,5 +1,8 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:3001/api/persons'
+const baseUrl =  'https://evening-savannah-71492.herokuapp.com/api/persons'
+
+//Ennen herokua local: const baseUrl = 'http://localhost:3001/api/persons'
+//Heroku: https://evening-savannah-71492.herokuapp.com/
 //alkuperäinen baseUrhl 'http://localhost:3001/persons'
 
 const getAll = () => {
