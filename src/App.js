@@ -120,7 +120,7 @@ const App = () => {
     .getAll()      
     .then(response => {        
       console.log('promise fulfilled')
-      console.log(response.data)        
+      console.log("response", response.data)        
       setPersons(response.data)
     })  
   }, [])  
