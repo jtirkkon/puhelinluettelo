@@ -115,7 +115,8 @@ const App = () => {
   const [messageType, setMessageType] = useState('')
 
   useEffect(() => {
-    console.log('effect')    
+    console.log('effect')
+    console.log('test')    
     personService
     .getAll()      
     .then(response => {        
