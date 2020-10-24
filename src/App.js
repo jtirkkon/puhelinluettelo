@@ -113,10 +113,11 @@ const App = () => {
   const [newNumber, setNewNumber] = useState('')
   const [informationMessage, setInformationMessage] = useState(null)
   const [messageType, setMessageType] = useState('')
+  console.log("App alku")
 
   useEffect(() => {
     console.log('effect')
-    console.log('test')    
+    //console.log('test')    
     personService
     .getAll()      
     .then(response => {        
