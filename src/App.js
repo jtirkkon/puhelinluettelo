@@ -4,16 +4,7 @@ import personService from './services/persons'
 
 import './App.css'
 
-//muuten kai toimii, mutta tiedot eivät päivity, esim alussa tai deletoinnin jälkeen
-//tutkitaan tätä, myös pavelimen konsolia
-//lisäys ei päivitä tietoja heti!!!
-//Github test
 
-//Tehtävät 2.6, 2.7 ja 2.8, 2.10 Nyt toimii!!!
-//2.15, 2.16, 2.17 ja 2.18 Toimii!!!
-//2.19 ja 2.20 Toimii!!!
-//Tässä on todella paljon tärkeää oppia, taulukoiden käsittelyä, State-objekti taulukon käsittelyä!!!
-//Tehdään maiden tiedot myöhemmin
 const Filter = ({handleFilterChange}) => {
   return (
     <div>
@@ -23,7 +14,7 @@ const Filter = ({handleFilterChange}) => {
   )  
 }
 
-//pitäisikö id-numero lisätä?
+
 const PersonForm = ({addPerson, handleNameChange, handleNumberChange, newName, newNumber}) => {
   return (
     <div>
@@ -106,7 +97,7 @@ const Notification = ({message, messageType}) => {
 const App = () => {
   const [persons, setPersons] = useState([
     /*{name: 'Arto Hellas', number: '040-3459067', show: true}, 
-    {name: 'Jouni Tirkkonen', number: '050-3297068', show: true}, 
+    {name: 'Jouni Tirkkonen', number: '050-4457890', show: true}, 
     {name: 'Sanna Siipola', number: '040-4568900', show: true}*/
   ]) 
   const [newName, setNewName ] = useState('')
@@ -195,7 +186,7 @@ const App = () => {
       personService
         .deletePerson(deleteId)
         .then(response => {
-          //Kutsutaan tiedot uudestaan serveriltä, vois ehkä tehdä jollain päivitykselläkin
+          
           personService
           .getAll()      
           .then(response => {        
