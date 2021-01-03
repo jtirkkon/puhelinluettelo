@@ -214,7 +214,7 @@ const App = () => {
     const newArray = [...persons]
     
     newArray.forEach(element => element.show = false)
-     //For loopilla tehty vastaava
+    
     /*for (let i = 0; i < newArray.length; i++) {
       newArray[i] = {...newArray[i], show: false}
     }*/
@@ -225,7 +225,7 @@ const App = () => {
       }
     })
    
-    //Tässä for loopilla tehty vastaava
+    
     /*for (let i=0; i < newArray.length; i++) {
       if (newArray[i].name.toLowerCase().includes(event.target.value.toString().toLowerCase())) {
         newArray[i] = {...newArray[i], show: true}
